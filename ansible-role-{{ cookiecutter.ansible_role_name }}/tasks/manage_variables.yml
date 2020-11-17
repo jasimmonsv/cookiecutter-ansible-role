@@ -1,5 +1,4 @@
 ---
-
 # All tasks about variables management
 
 - name: 'INIT | VARIABLES | Check if OS family vars file exists'

@@ -1,5 +1,4 @@
 ---
-
 # Main tasks file for {{ cookiecutter.ansible_role_name }} role
 
 - name: 'INIT | Manage variables to use for our target'
