@@ -1,0 +1,8 @@
+---
+# Main tasks file for {{ cookiecutter.ansible_role_slug }} role
+
+- name: 'INIT | Manage variables to use for our target'
+  import_tasks: "{{ '{{ role_path }}/tasks/manage_variables.yml' }}"
+  tags:
+    - 'role::{{ cookiecutter.ansible_role_slug }}'
+    - 'role::{{ cookiecutter.ansible_role_slug }}::init'

@@ -5,7 +5,7 @@
 [![Updates](https://pyup.io/repos/github/{{ cookiecutter.ansible_role_repository }}/shield.svg)](https://pyup.io/repos/github/{{ cookiecutter.ansible_role_repository }}/)
 [![Python 3](https://pyup.io/repos/github/{{ cookiecutter.ansible_role_repository }}/python-3-shield.svg)](https://pyup.io/repos/github/{{ cookiecutter.ansible_role_repository }}/)
 
-Install {{ cookiecutter.ansible_role_name }} package.
+Install {{ cookiecutter.ansible_role_slug }} package.
 
 ## Requirements
 
@@ -54,7 +54,7 @@ None
 ``` yaml
 - hosts: servers
   roles:
-    - { role: {{ cookiecutter.author_github_username }}.{{ cookiecutter.ansible_role_name }} }
+    - { role: {{ cookiecutter.author_github_username }}.{{ cookiecutter.ansible_role_slug }} }
 ```
 
 ### Running tests
@@ -75,7 +75,7 @@ $ MOLECULE_OPTIONS='' MOLECULE_COMMAND=converge tox
 
 ## License
 
-{{ cookiecutter.ansible_role_license }}
+{{ cookiecutter.ansible_role_license }} - {{ cookiecutter.year }}
 
 ## Author Information
 

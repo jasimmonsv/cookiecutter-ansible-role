@@ -1,0 +1,2 @@
+---
+# Defaults vars file for {{ cookiecutter.ansible_role_slug }} role
