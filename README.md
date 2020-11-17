@@ -1,4 +1,4 @@
-# cookiecutter-ansible-role
+# Cookiecutter Ansible Role
 
 [![CI](https://github.com/infOpen/cookiecutter-ansible-role/workflows/CI/badge.svg)](https://github.com/infOpen/cookiecutter-ansible-role/actions)
 [![Mergify Status][mergify-status]][mergify]
@@ -6,6 +6,29 @@
 [![Python 3](https://pyup.io/repos/github/infOpen/cookiecutter-ansible-role/python-3-shield.svg)](https://pyup.io/repos/github/infOpen/cookiecutter-ansible-role/)
 
 Cookiecutter template for Ansible role
+
+* GitHub repo: https://github.com/jasimmonsv/cookiecutter-ansible-role/
+* Documentation: https://cookiecutter-ansible-role.readthedocs.io/
+* Free software: MIT license
+
+## Features
+* Ansible testing using [Molecule](https://molecule.readthedocs.io)
+* Scripts in tasks to manage different OS variables
+
+## Quickstart
+Install the latest Cookiecutter (requires Cookiecutter > 1.4.0):
+
+```pip install -U cookiecutter```
+
+Generate an Ansible package project:
+
+```cookiecutter https://github.com/jasimmonsv/cookiecutter-ansible-role.git```
+
+Then:
+* Create a repo and push.
+* Add the repo to your [Travis-CI](https://travis-ci.org) account
+* Add the repo to your [ReadTheDocs](https://readthedocs.io) account + turn on the ReadTheDocs service hook.
+* Release your package by pushing a new tag to master.
 
 ## Default variables
 
