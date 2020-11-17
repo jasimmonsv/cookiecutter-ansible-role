@@ -9,12 +9,14 @@ Install {{ cookiecutter.ansible_role_name }} package.
 
 ## Requirements
 
-This role requires Ansible {{ cookiecutter.ansible_role_minimal_version }} or higher,
-and platform requirements are listed in the metadata file.
+This role requires Ansible {{ cookiecutter.ansible_role_minimal_version }} or higher, and platform requirements are listed in the metadata file.
+
+Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good \ idea to mention in this section that the boto package is required.
 
 ## Testing
 
-This role use [Molecule](https://github.com/ansible-community/molecule) to run tests.
+This role use [Molecule](https://github.com/ansible-community/molecule) to run
+tests.
 
 Local and Github Actions tests run tests on Docker by default.
 See molecule documentation to use other backend.
@@ -30,22 +32,6 @@ Currently, tests are done on:
 and use:
 - Ansible 2.8.x
 - Ansible 2.9.x
-
-### Running tests
-
-#### Using Docker driver
-
-```
-$ tox
-```
-
-You can also configure molecule options and molecule command using environment variables:
-* `MOLECULE_OPTIONS` Default: "--debug"
-* `MOLECULE_COMMAND` Default: "test"
-
-```
-$ MOLECULE_OPTIONS='' MOLECULE_COMMAND=converge tox
-```
 
 ## Role Variables
 
@@ -69,6 +55,22 @@ None
 - hosts: servers
   roles:
     - { role: {{ cookiecutter.author_github_username }}.{{ cookiecutter.ansible_role_name }} }
+```
+
+### Running tests
+
+#### Using Docker driver
+
+```
+$ tox
+```
+
+You can also configure molecule options and molecule command using environment variables:
+* `MOLECULE_OPTIONS` Default: "--debug"
+* `MOLECULE_COMMAND` Default: "test"
+
+```
+$ MOLECULE_OPTIONS='' MOLECULE_COMMAND=converge tox
 ```
 
 ## License
